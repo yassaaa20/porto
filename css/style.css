@@ -1,0 +1,85 @@
+html,
+body {
+  overflow-x: hidden;
+}
+section {
+  margin: 0;
+}
+
+.logo-img {
+  width: 40px; /* Adjust the size as needed */
+  height: auto; /* Keeps the aspect ratio */
+}
+ 
+svg {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 80%;
+  border: none;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.custom-card {
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom-card .card-body {
+  padding: 55px 0;
+}
+
+.custom-card .card-body i {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.custom-card:hover,
+.custom-card:active {
+  background:#CAA8F5;
+  color: #fff;
+}
+
+.card_slide {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/bujursangkar.jpg") no-repeat 50% 50% / cover;
+  width: 400px;
+  height: 512px;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 100vw; /* Pastikan swiper tidak melebihi lebar layar */
+  overflow-x: hidden; /* Menghilangkan scroll horizontal */
+}
+
+.swiper-slide {
+  max-width: 100%; /* Pastikan lebar card tidak melebihi layar */
+  overflow: hidden; /* Element yang melebihi akan tersembunyi */
+}
+
+.card_slide {
+  background-color: #333;
+  width: 100%;
+  max-width: 320px; /* Batasi lebar card */
+  border-radius: 10px;
+  overflow: hidden; /* Agar konten yang terlalu besar tersembunyi */
+}
